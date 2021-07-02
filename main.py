@@ -35,11 +35,10 @@ class YandexDisk:
         if response.status_code == 201:
             print("Success")
 
-TOKEN = "AQAAAABRjNZlAADLW48MxrzbfkHOuks1XnThsYU"
+TOKEN = ""
 
 if __name__ == '__main__':
     ya = YandexDisk(token=TOKEN)
-    # pprint(ya.get_files_list())
     ya.upload_file_to_disk(disk_file_path = 'test/test.txt',
                            filename = 'test.txt')
 
